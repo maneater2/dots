@@ -1,0 +1,5 @@
+#!/bin/sh
+
+wall=$(ls $HOME/Pictures/wallpapers | sort -u | dmenu -l 99)
+
+feh --bg-fill $HOME/Pictures/wallpapers/$wall
